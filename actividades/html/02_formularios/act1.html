@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo para crear espacio entre elementos */
+        label,
+        button {
+            margin-bottom: 10px; /* Puedes ajustar el valor según tu preferencia */
+            display: block; /* Coloca cada elemento en una línea */
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <!-- Titulo de Fieldset -->
+        <legend>Formulario de contacto</legend>
+      
+        <div>
+            <label>
+                Nombre/s
+                <input type="text" name="nombre">
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                Apellido/s
+                <input type="text" name="apellido">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Mensaje a enviar
+                <textarea name="mensaje"></textarea>
+            </label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </fieldset>
+</body>
+
+</html>
