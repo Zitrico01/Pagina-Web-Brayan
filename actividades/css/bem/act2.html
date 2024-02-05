@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentarios Básico</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .comments-section {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+        }
+
+        .comment-date {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .comment-text {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="comments-section">
+        <div class="comment">
+            <div class="comment-author">Usuario1</div>
+            <div class="comment-date">Fecha: 01/01/2022</div>
+            <div class="comment-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-author">Usuario2</div>
+            <div class="comment-date">Fecha: 02/01/2022</div>
+            <div class="comment-text">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+
+        <!-- Puedes añadir más comentarios aquí -->
+
+        <!-- Formulario para agregar comentarios -->
+        <form action="#" method="post">
+            <label for="comment-author">Tu nombre:</label>
+            <input type="text" id="comment-author" name="comment-author" required>
+            
+            <label for="comment-text">Tu comentario:</label>
+            <textarea id="comment-text" name="comment-text" rows="4" required></textarea>
+
+            <button type="submit">Agregar Comentario</button>
+        </form>
+    </div>
+</body>
+</html>
