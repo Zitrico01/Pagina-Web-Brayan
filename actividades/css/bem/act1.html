@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Personalizado</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-item:hover {
+            color: #ffc107;
+        }
+
+        .search-form {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="../img/facebook.png" alt="logo">
+        <nav class="nav">
+            <a class="nav-item" href="#">Inicio</a>
+            <a class="nav-item" href="#">Imágenes</a>
+            <a class="nav-item" href="#">Contacto</a>
+        </nav>
+        <form class="search-form" action="/search" method="get">
+            <input class="search-input" type="text" name="buscar" placeholder="Buscar...">
+            <button class="search-button" type="submit">Buscar</button>
+        </form>
+    </div>
+</body>
+</html>
