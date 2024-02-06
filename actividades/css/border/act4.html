@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de borde difuminado en una imagen</title>
+<style>
+    .bordered-image {
+        border: 10px solid rgb(195, 147, 18);
+        border-radius: 10px; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bordered-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        background: linear-gradient(to top, rgb(195, 147, 18), transparent);
+        border-radius: 0 0 5px 5px; /* Borde redondeado solo en la parte inferior */
+    }
+</style>
+</head>
+<body>
+    <img src="/10-monstruo.png" alt="Descripción de la imagen" class="bordered-image">
+</body>
+</html>
