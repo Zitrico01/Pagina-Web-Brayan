@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de lista con corazones</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100px;
+            margin: 0 auto;
+            border: 2px solid #003366;
+            position: relative;
+            top: 40%;
+            transform: translateY(-40%);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            text-align: center;
+            background-color: #003366;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            width: 100px;
+            height: 30px;
+        }
+
+        li:first-child {
+            background-color: #99ccff;
+        }
+
+        li:hover {
+            background-color: #99ccff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>Productos</li>
+            <li>Carrito</li>
+            <li>Perfil</li>
+        </ul>
+    </div>
+</body>
+
+</html>
