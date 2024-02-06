@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .faq-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+    }
+    .faq-column {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .question {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #000; /* Línea que separa preguntas */
+      padding: 20px;
+      transition: font-size 0.3s ease-in-out;
+    }
+    .answer {
+      display: none;
+      font-size: 2em;
+      transition: font-size 0.3s ease-in-out;
+    }
+    .question:focus {
+      font-size: 1.5em;
+    }
+    .question:focus + .answer {
+      display: block;
+      font-size: 1.5em;
+    }
+    .plus-sign {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="faq-container">
+    <div class="faq-column">
+      <div class="question" tabindex="0">
+        ¿Qué métodos de pago se ofrecen? <span class="plus-sign">+</span>
+      </div>
+      <div class="answer">
+        Actualmente, aceptamos tarjetas de crédito y débito, así como opciones de pago en línea populares.
+      </div>
+
+      <div class="question" tabindex="0">
+        ¿Cómo puedo cambiarme a un plan diferente? <span class="plus-sign">+</span>
+      </div>
+      <div class="answer">
+        Puedes cambiar tu plan accediendo a la configuración de tu cuenta y seleccionando la opción "Cambiar Plan".
+      </div>
+
+      <div class="question" tabindex="0">
+        ¿Puedo optar por comprar créditos? <span class="plus-sign">+</span>
+      </div>
+      <div class="answer">
+        Sí, ofrecemos la opción de comprar créditos que puedes utilizar según tus necesidades.
+      </div>
+
+      <div class="question" tabindex="0">
+        ¿Hay precios especiales para quienes envían grandes volúmenes de correos electrónicos? <span class="plus-sign">+</span>
+      </div>
+      <div class="answer">
+        Sí, ofrecemos precios personalizados y descuentos para usuarios que manejan grandes volúmenes de correos electrónicos. Ponte en contacto con nuestro equipo de ventas para obtener más información.
+      </div>
+
+      <div class="question" tabindex="0">
+        ¿Qué sucede si llego al límite de envíos o contactos? <span class="plus-sign">+</span>
+      </div>
+      <div class="answer">
+        En caso de alcanzar el límite, te notificaremos y ofreceremos opciones para actualizar tu plan o ajustar la configuración según tus necesidades.
+      </div>
+
+      <!-- Agregar más preguntas y respuestas aquí -->
+    </div>
+  </div>
+
+</body>
+</html>
