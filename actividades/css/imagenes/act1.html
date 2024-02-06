@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Entre Dos Personas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .message-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message-content {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 60%;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .message-text {
+            font-size: 16px;
+        }
+
+        /* Estilo para el otro participante */
+        .other-person .message-content {
+            background-color: #d4edda;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <div class="avatar">
+            <img src="/images (2).jpg" alt="Avatar 1">
+        </div>
+        <div class="message-content">
+            <div class="name">Usuario 1</div>
+            <div class="date">1 de febrero, 2024</div>
+            <div class="message-text">¡Hola! ¿Cómo estás?</div>
+        </div>
+    </div>
+
+    <div class="message-container other-person">
+        <div class="avatar">
+            <img src="/707171e258b8e7a4f875d19aa8ca31ea.jpg" alt="Avatar 2">
+        </div>
+        <div class="message-content">
+            <div class="name">Usuario 2</div>
+            <div class="date">2 de febrero, 2024</div>
+            <div class="message-text">¡Hola! Estoy bien, ¿y tú?</div>
+        </div>
+    </div>
+
+    <!-- Puedes repetir este bloque para agregar más mensajes -->
+
+</body>
+</html>
