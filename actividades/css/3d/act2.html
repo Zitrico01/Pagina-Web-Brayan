@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen de Suelo, Pared y Objeto Encima del Suelo con Sombra</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 600px;
+            /* Ajusta el ancho según tus necesidades */
+            height: 400px;
+            /* Ajusta la altura según tus necesidades */
+            margin: 100px auto;
+            /* Centra el contenedor */
+            overflow: hidden;
+            /* Para ocultar el desbordamiento */
+        }
+
+        .pared {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .suelo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transform-origin: bottom;
+            /* Establece el origen de la transformación en la parte inferior */
+            transform: skewY(-10deg);
+            /* Aplica una inclinación hacia arriba */
+        }
+
+        .objeto {
+            position: absolute;
+            bottom: 50px;
+            /* Ajusta la posición vertical según necesites */
+            left: 200px;
+            /* Ajusta la posición horizontal según necesites */
+            width: 100px;
+            /* Ajusta el ancho según necesites */
+            height: auto;
+            /* Ajusta la altura según necesites */
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+            /* Añade una sombra con desplazamiento */
+            transform: translate(50px, 50px);
+            /* Desplaza la oveja hacia la derecha y abajo */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="pared" src="../../img/pared.jpg" alt="Pared">
+        <img class="suelo" src="../../img/suelo.jpg" alt="Suelo">
+        <img class="objeto" src="../../img/oveja.png" alt="Objeto Encima del Suelo">
+    </div>
+</body>
+
+</html>
