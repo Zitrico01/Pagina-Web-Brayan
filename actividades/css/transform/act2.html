@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos básicos del modal */
+        .modal {
+            width: 200px;
+            height: 100px;
+            background-color: #f1f1f1;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out; /* Agregar transición para suavizar el cambio de tamaño */
+        }
+
+        /* Estilo adicional al pasar el cursor sobre el modal */
+        .modal:hover {
+            transform: translate(-50%, -50%) scale(1.5); /* Duplicar el tamaño al pasar el cursor sobre el modal */
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="modal">Modal</div>
+
+</body>
+
+</html>
