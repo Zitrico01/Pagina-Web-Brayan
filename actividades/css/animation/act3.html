@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noria con Cartel de Cookies</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #2c3e50;
+        }
+
+        .contenedor {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .noria {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation: girar 10s linear infinite;
+        }
+
+        .soporte {
+            width: 20px;
+            height: 80px;
+            background-color: #34495e;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rueda {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #e74c3c;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .barra {
+            width: 10px;
+            height: 100px;
+            background-color: #ecf0f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .barra:nth-child(2) {
+            transform: translateX(-50%) rotate(40deg);
+        }
+
+        .barra:nth-child(3) {
+            transform: translateX(-50%) rotate(80deg);
+        }
+
+        .barra:nth-child(4) {
+            transform: translateX(-50%) rotate(120deg);
+        }
+
+        .barra:nth-child(5) {
+            transform: translateX(-50%) rotate(160deg);
+        }
+
+        .barra:nth-child(6) {
+            transform: translateX(-50%) rotate(200deg);
+        }
+
+        .barra:nth-child(7) {
+            transform: translateX(-50%) rotate(240deg);
+        }
+
+        .barra:nth-child(8) {
+            transform: translateX(-50%) rotate(280deg);
+        }
+
+        .barra:nth-child(9) {
+            transform: translateX(-50%) rotate(320deg);
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Estilos para el cartel de cookies */
+        .cookies-cartel {
+            position: fixed;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease, bottom 0.5s ease;
+        }
+
+        /* Animación para mostrar el cartel de cookies */
+        .show-cookies {
+            bottom: 20px;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="noria">
+            <div class="soporte"></div>
+            <div class="rueda"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+    </div>
+
+    <!-- Cartel de cookies -->
+    <div id="cookiesCartel" class="cookies-cartel">
+        Este sitio web utiliza cookies. Al continuar utilizando este sitio, aceptas su uso.
+    </div>
+
+    <script>
+        // Muestra el cartel de cookies después de 5 segundos
+        setTimeout(function () {
+            document.getElementById('cookiesCartel').classList.add('show-cookies');
+        }, 5000);
+    </script>
+
+</body>
+
+</html>

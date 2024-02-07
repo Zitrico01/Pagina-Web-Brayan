@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Péndulo Animado</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ecf0f1;
+        }
+
+        .pendulo-container {
+            position: relative;
+            width: 4px;
+            height: 200px;
+            background-color: #3498db;
+            margin-top: 100px;
+            animation: oscilar 2s ease-in-out infinite;
+            transform-origin: 50% 0; /* Establece el punto de rotación en la parte superior del péndulo */
+        }
+
+        .peso {
+            width: 20px;
+            height: 20px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes oscilar {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(30deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pendulo-container">
+        <div class="peso"></div>
+    </div>
+
+</body>
+
+</html>

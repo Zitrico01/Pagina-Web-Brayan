@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+            perspective: 1000px; /* Establecer la perspectiva para las transformaciones 3D */
+            display: inline-block;
+        }
+
+        .image-container:hover .image {
+            transform: rotateY(20deg); /* Rotar la imagen en el eje Y al pasar el ratón */
+        }
+
+        .image {
+            transition: transform 0.5s ease-in-out; /* Agregar transición para suavizar el cambio de transformación */
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img class="image" src="/actividades/img/image-people-6.jpg" alt="Imagen">
+    </div>
+
+</body>
+
+</html>
