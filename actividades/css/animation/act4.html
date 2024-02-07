@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Animado</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1c40f;
+        }
+
+        .reloj {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #3498db;
+            border-radius: 50%;
+            position: relative;
+            animation: girar 60s linear infinite;
+        }
+
+        .aguja-segundos,
+        .aguja-minutos,
+        .aguja-horas {
+            position: absolute;
+            background-color: #e74c3c;
+            transform-origin: 50% 100%; /* Punto de origen en la base para las agujas */
+        }
+
+        .aguja-segundos {
+            width: 2px;
+            height: 90px;
+            top: 10px;
+            left: 50%;
+            animation: girar-segundos 60s steps(60) infinite;
+        }
+
+        .aguja-minutos {
+            width: 4px;
+            height: 80px;
+            top: 20px;
+            left: 50%;
+            animation: girar-minutos 3600s steps(60) infinite;
+        }
+
+        .aguja-horas {
+            width: 6px;
+            height: 60px;
+            top: 30px;
+            left: 50%;
+            animation: girar-horas 43200s steps(12) infinite;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes girar-segundos {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes girar-minutos {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes girar-horas {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Estilos adicionales para el centro del reloj */
+        .centro-reloj {
+            width: 12px;
+            height: 12px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reloj">
+        <div class="aguja-segundos"></div>
+        <div class="aguja-minutos"></div>
+        <div class="aguja-horas"></div>
+        <div class="centro-reloj"></div>
+    </div>
+
+</body>
+
+</html>
