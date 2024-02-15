@@ -17,6 +17,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            overflow: hidden;
         }
 
         header {
@@ -25,21 +26,18 @@
             padding: 1em;
             text-align: center;
             position: relative;
+            margin-bottom: 0;
+            /* Evitar margen inferior en el encabezado */
         }
 
-        header img {
+        header #logo {
             width: 80px;
             height: 80px;
             margin-right: 1em;
             left: 10px;
             bottom: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            font-family: 'Roboto', sans-serif;
-            /* Puedes cambiar 'Roboto' por la fuente que desees */
+            /* Define el espacio para tu logo, reemplaza 'ruta/tu/logo.png' con la ruta correcta de tu logo */
+            content: url('ruta/tu/logo.png');
         }
 
         nav {
@@ -64,18 +62,21 @@
             align-items: center;
             text-align: center;
             padding: 2em;
-            background: url('/actividades/img/como-poner-un-fondo-de-perfil-de-steam-660x400.jpg') center/cover no-repeat;
-            /* Ruta relativa de la imagen */
+            background: url('../Pagina-Web-Brayan/actividades/img/ZITRICO\ BLANCO\ FONDO\ NEGRO.jpg') center/cover no-repeat;
+            /* Ruta relativa de la imagen de fondo del section */
         }
 
-        section h2 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
+        header h1 {
+            margin: 0.5em 0;
+            /* Definir márgenes superior e inferior */
+            font-size: 2.5em;
+            font-family: 'Roboto', sans-serif;
+            /* Puedes cambiar 'Roboto' por la fuente que desees */
             transition: transform 0.3s ease-in-out;
         }
 
-        section h2:hover {
-            transform: scale(1.25);
+        header h1:hover {
+            transform: scale(1.35);
         }
 
         section p {
@@ -86,7 +87,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1em;
+            padding: 0-9em;
             width: 100%;
         }
 
@@ -100,19 +101,19 @@
 <body>
 
     <header>
-        <img src="tu_logo.jpg" alt="Logo">
-        <h1>Hola, soy Brayan Villalba</h1>
+        <img id="logo" src="ruta/tu/logo.png" alt="Logo"> <!-- Agrega tu ruta aquí -->
+        <h1>Hola, soy Brayan Villalba.</h1>
     </header>
 
     <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/actividades/contacto.html">Contacto</a>
-        <a href="/actividades/actividadeshtml.html">Actividades</a>
-        <a href="/actividades/sobremi.html">Sobre mi</a>
+        <a href="../Pagina-Web-Brayan/index.html">Inicio</a>
+        <a href="../Pagina-Web-Brayan/actividades/contacto.html">Contacto</a>
+        <a href="../Pagina-Web-Brayan/actividades/actividadeshtml.html">Actividades</a>
+        <a href="../Pagina-Web-Brayan/actividades/sobremi.html">Sobre mi</a>
     </nav>
 
     <section>
-        <h2>Bienvenido a mi portafolio.</h2>
+        <br>
     </section>
 
     <footer>
